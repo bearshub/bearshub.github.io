@@ -1,52 +1,92 @@
-I"}0<script src="/assets/scripts/toggle.js"></script>
+I"Ÿ1<script src="/assets/scripts/toggle.js"></script>
 
 <script src="/assets/scripts/scrollTop.js"></script>
 
 <div class="page">
-	
+
 	<h2 id="categories"><a href="#example" class="toggle">Categories</a></h2>
 	<span class="small_desc">Click here to see all categories</span>
 	<div class="clearfix"></div>
 		<div class="toggle-content" id="example">
-			<!--
-			<h3 class="category_name_link"><a href="/about">jekyll</a></h3>
-			<ul>
-			  <li><a href="/jekyll/2018/07/28/introducing-hyde.html">Install Hyde theme on Jekyll version 3</a><span>28 Jul 2018</span></li>
-			
-			</ul>
-			<h3 class="category_name_link"><a href="/blog">web</a></h3>
-			<ul>
-			  <li><a href="/web/2018/08/23/optimize-site-speed.html">Optimize site speed</a><span>23 Aug 2018</span></li>
-			  <li><a href="/web/2018/08/19/deploy-site-on-netlify.html">Deploy a photography portfolio site on Netlify</a><span>19 Aug 2018</span></li>
-			  <li><a href="/web/2018/08/06/using-webpack-for-fullstack-app.html">Using webpack for fullstack app</a><span>06 Aug 2018</span></li>
-			</ul>
-			-->
-			
-			<!--
-			
-				<h3 class="category_name_link">
-					<a href="">
-					</a>
-				</h3>
-			
-				<h3 class="category_name_link">
-					<a href="">
-					</a>
-				</h3>
-			
-			-->
 			
 			
-			
-		</div>
-	<hr />
+				
+					
+				
+		
+				
+					
+				
+		
+				
+					
+				
+		
+				
+					
+						<h3 class="category_name_link"><a href="http://localhost:4000/category/example/">example</a></h3>
+						
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/example/2012/02/07/example-content/">
+								  Example content
+								</a>
+								<span>07 Feb 2012</span>
+							</li>
+							</ul>
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/example/2012/02/06/whats-jekyll/">
+								  What's Jekyll?
+								</a>
+								<span>06 Feb 2012</span>
+							</li>
+							</ul>
+						  
+				
+				
+		
+				
+					
+				
+		
+				
+					
+						<h3 class="category_name_link"><a href="http://localhost:4000/category/sample/">sample</a></h3>
+						
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/sample/2020/05/22/test-post/">
+								  sample content
+								</a>
+								<span>22 May 2020</span>
+							</li>
+							</ul>
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/sample/2013/12/28/introducing-hyde/">
+								  Introducing Hyde
+								</a>
+								<span>28 Dec 2013</span>
+							</li>
+							</ul>
+						  
+				
+				
+		
+	</div>
+<hr />
 
 	<div class="posts">
 	  
 	  <div class="post">
 		<h1 class="post-title">
 		  <a href="/sample/2020/05/22/test-post/">
-			Example content
+			sample content
 		  </a>
 		</h1>
 
