@@ -1,4 +1,4 @@
-I"�1<script src="/assets/scripts/toggle.js"></script>
+I"3<script src="/assets/scripts/toggle.js"></script>
 
 <script src="/assets/scripts/scrollTop.js"></script>
 
@@ -24,12 +24,16 @@
 		
 				
 					
-						<h3 class="category_name_link"><a href="http://localhost:4000//category/example/">example</a></h3>
+				
+		
+				
+					
+						<h3 class="category_name_link"><a href="http://localhost:4000/category/example/">example</a></h3>
 						
 						  
 							<ul>
 							<li>
-								<a href="http://localhost:4000//example/2012/02/07/example-content/">
+								<a href="http://localhost:4000/example/2012/02/07/example-content/">
 								  Example content
 								</a>
 								<span>07 Feb 2012</span>
@@ -38,7 +42,7 @@
 						  
 							<ul>
 							<li>
-								<a href="http://localhost:4000//example/2012/02/06/whats-jekyll/">
+								<a href="http://localhost:4000/example/2012/02/06/whats-jekyll/">
 								  What's Jekyll?
 								</a>
 								<span>06 Feb 2012</span>
@@ -54,12 +58,12 @@
 		
 				
 					
-						<h3 class="category_name_link"><a href="http://localhost:4000//category/sample/">sample</a></h3>
+						<h3 class="category_name_link"><a href="http://localhost:4000/category/sample/">sample</a></h3>
 						
 						  
 							<ul>
 							<li>
-								<a href="http://localhost:4000//sample/2020/05/22/test-post/">
+								<a href="http://localhost:4000/sample/2020/05/22/test-post/">
 								  sample content
 								</a>
 								<span>22 May 2020</span>
@@ -68,7 +72,7 @@
 						  
 							<ul>
 							<li>
-								<a href="http://localhost:4000//sample/2013/12/28/introducing-hyde/">
+								<a href="http://localhost:4000/sample/2013/12/28/introducing-hyde/">
 								  Introducing Hyde
 								</a>
 								<span>28 Dec 2013</span>
@@ -117,7 +121,7 @@
 <ul>
   <li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
   <li>Mobile friendly design and development</li>
-  <li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
+  <li>Easily scalable text and component sizing with <code class="highlighter-rouge">rem</code> units in the CSS</li>
   <li>Support for a wide gamut of HTML elements</li>
   <li>Related posts (time-based, because Jekyll) below each post</li>
   <li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
@@ -129,8 +133,8 @@
 
 <ul>
   <li>Sidebar includes support for textual modules and a dynamically generated navigation with active link support</li>
-  <li>Two orientations for content and sidebar, default (left sidebar) and <a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar), available via <code>&lt;body&gt;</code> classes</li>
-  <li><a href="https://github.com/poole/hyde#themes">Eight optional color schemes</a>, available via <code>&lt;body&gt;</code> classes</li>
+  <li>Two orientations for content and sidebar, default (left sidebar) and <a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar), available via <code class="highlighter-rouge">&lt;body&gt;</code> classes</li>
+  <li><a href="https://github.com/poole/hyde#themes">Eight optional color schemes</a>, available via <code class="highlighter-rouge">&lt;body&gt;</code> classes</li>
 </ul>
 
 <p><a href="https://github.com/poole/hyde#readme">Head to the readme</a> to learn more.</p>
@@ -172,12 +176,12 @@
 <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
 
 <ul>
-  <li><strong>To bold text</strong>, use <code>&lt;strong&gt;</code>.</li>
-  <li><em>To italicize text</em>, use <code>&lt;em&gt;</code>.</li>
-  <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code>&lt;abbr&gt;</code>, with an optional <code>title</code> attribute for the full phrase.</li>
-  <li>Citations, like <cite>— Mark otto</cite>, should use <code>&lt;cite&gt;</code>.</li>
-  <li><del>Deleted</del> text should use <code>&lt;del&gt;</code> and <ins>inserted</ins> text should use <code>&lt;ins&gt;</code>.</li>
-  <li>Superscript <sup>text</sup> uses <code>&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code>&lt;sub&gt;</code>.</li>
+  <li><strong>To bold text</strong>, use <code class="highlighter-rouge">&lt;strong&gt;</code>.</li>
+  <li><em>To italicize text</em>, use <code class="highlighter-rouge">&lt;em&gt;</code>.</li>
+  <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="highlighter-rouge">title</code> attribute for the full phrase.</li>
+  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="highlighter-rouge">&lt;cite&gt;</code>.</li>
+  <li><del>Deleted</del> text should use <code class="highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="highlighter-rouge">&lt;ins&gt;</code>.</li>
+  <li>Superscript <sup>text</sup> uses <code class="highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="highlighter-rouge">&lt;sub&gt;</code>.</li>
 </ul>
 
 <p>Most of these elements are styled by browsers with few modifications on our part.</p>
@@ -188,7 +192,7 @@
 
 <h3 id="code">Code</h3>
 
-<p>Cum sociis natoque penatibus et magnis dis <code>code element</code> montes, nascetur ridiculus mus.</p>
+<p>Cum sociis natoque penatibus et magnis dis <code class="highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
 
