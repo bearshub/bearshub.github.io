@@ -1,0 +1,33 @@
+I"‚<hr style="width:88%" />
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_1.png" /></div>
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_2.png" /></div>
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_3.png" /></div>
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_4.png" /></div>
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_5.png" /></div>
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_6.png" /></div>
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_7.png" /></div>
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_8.png" /></div>
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_9.png" /></div>
+      <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_10" />0</div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+<p><!-- Swiper JS -->
+  <script src="../../assets/scripts/swiper.min.js"></script></p>
+
+<p><!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script></p>
+:ET

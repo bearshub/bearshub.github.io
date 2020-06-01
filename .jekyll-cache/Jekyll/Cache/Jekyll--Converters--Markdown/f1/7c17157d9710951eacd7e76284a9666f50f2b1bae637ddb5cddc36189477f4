@@ -1,0 +1,61 @@
+I"�<hr />
+
+<div class="work_outer">
+	<!--
+	<div class="title_outer">
+		<h1 class="page-title work_title">Sample Name</h1>
+	</div>
+	-->
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_1.png" /></div>
+		  <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_2.png" /></div>
+		  <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_3.png" /></div>
+		  <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_4.png" /></div>
+		  <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_5.png" /></div>
+		  <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_6.png" /></div>
+		  <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_7.png" /></div>
+		</div>
+		
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+</div>
+
+<!-- Swiper JS -->
+<script src="/assets/scripts/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper('.swiper-container', {
+    navigation: {
+		nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+		},
+    });
+</script>
+
+<h3 id="steco-omopen-market-mes-system">STECO OM(Open Market) MES System</h3>
+<p>해외사업을 대상으로 하는 물량을 진행하기 위해서 구축한 MES 시스템. <br />
+Bump - EDS 공정 간 생산되는 제품을 추적하여 관리.</p>
+
+<h5 id="ui-client">UI Client</h5>
+<ul>
+  <li>HTML, Java Script, jqGrid and Highchart(Open Source)</li>
+</ul>
+
+<h5 id="server">Server</h5>
+<ul>
+  <li>Java, Spring Framework</li>
+</ul>
+
+<h5 id="database">DataBase</h5>
+<ul>
+  <li>Oracle 11g, iBatis</li>
+</ul>
+
+<p><i>from 08.2017 ~ 08. 2019</i></p>
+
+:ET
