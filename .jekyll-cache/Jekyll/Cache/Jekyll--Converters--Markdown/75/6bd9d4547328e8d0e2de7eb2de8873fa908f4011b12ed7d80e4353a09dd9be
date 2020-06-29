@@ -1,0 +1,70 @@
+I"�<p>지난 포스트는 Github의 Repository 생성부터 jekyll server를 설치하고 구동 시켜보는 것 까지 진행 했었다. 이번 포스트는 jekyll theme를 적용하는 것을 다루어 보려고 한다.  jekyll은  특색있는 테마들로 블로그를 꾸밀 수 있는데, 대부분 무료로 사용할 수 있는 테마들이 많이 있다.  필자는 jekyll의 많은 블로그 테마 중 <a href="https://github.com/poole/hyde">hyde</a> 테마를 적용하였고 이를 적용한 방법을 기록 하려고 한다.<br />
+<del>jekyll 엔 hyde가 딱이야 !</del></p>
+
+<ul>
+  <li>jekeyll theme 관련 사이트</li>
+  <li>
+    <p><a href="http://jekyllthemes.org/">jekyllthemes.org</a></p>
+  </li>
+  <li><a href="https://jekyllthemes.io/free">Free Jekyll Themes</a></li>
+</ul>
+
+<p>테마를 고르는데 몇 가지 팁이 있다면 가장 먼저 모바일 기기를 지원하는지 확인 하는 것이고 사이드바가 존재하는지 확인 하는 것이다.   사이드바가 없는 테마도 추가를 할 수 있지만 작업을 하다보면 정신건강에 해로울 수 있다.</p>
+
+<h3 id="1-hyde-테마-download">1. hyde 테마 Download</h3>
+<ul>
+  <li><a href="https://github.com/poole/hyde">hyde Github</a> 에서 Clone</li>
+  <li><a href="https://hyde.getpoole.com/">hyde Demo</a> 에서 Download를 클릭해서 zip 파일을 다운로드 
+위의 두 가지중 편한 것을 진행하여 앞서 만들었던 id.github.io 폴더에 저장한다.</li>
+</ul>
+
+<p><img src="https://bearshub.github.io/assets/img/github/github_blog_6.png" alt="사진" /></p>
+
+<h3 id="2-_configyml-파일-수정">2. _config.yml 파일 수정</h3>
+
+<ul>
+  <li>
+    <p>Markdown Dependancy 수정</p>
+
+    <ul>
+      <li>Github Page가 2019년 5월 부터 Markdown 형식을 <code class="highlighter-rouge">kramdown</code> 만 지원하는 것으로 정했다. 그래서 기존에 사용하던 <code class="highlighter-rouge">redcarpet</code> 방식에서 <code class="highlighter-rouge">kramdown</code> 으로 변경 해줘야 한다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>relative_permalinks 삭제</p>
+  </li>
+  <li>
+    <p>relative_permalinks : true 라고 되어 있는 항목을 삭제 한다.</p>
+  </li>
+  <li>Plug in 설치 및  추가
+    <ul>
+      <li>jekyll -paginate 와 jekyll-gist 를 설치 해준다.  (gem list 명령어로 설치 확인)
+        <pre><code class="language-jekyll">$ gem install jekyll-gist
+$ gem install jekyll-paginate
+</code></pre>
+      </li>
+      <li>이 부분을 _config.yml 마지막 부분에 추가 해 준다.
+```_config.yml
+plugins:
+        <ul>
+          <li>jekyll-paginate</li>
+          <li>jekyll-gist
+```</li>
+        </ul>
+      </li>
+      <li>Kramdown은 기존에 설치가 됐던 것으로 기억한다. 혹시라도 없으면 설치해 주시라..</li>
+    </ul>
+  </li>
+  <li>jekyll 테마마다 필요한 plugin이나 방법들이 다소 다를 수 있으니 주의 !</li>
+</ul>
+
+<h3 id="3-jekyll-구동">3. Jekyll 구동</h3>
+<pre><code class="language-jekyll">$ jekyll serve 
+</code></pre>
+
+<p>서버가 뜨는것을 확인 하고 <a href="http://localhost:4000">localhost:4000</a>으로 접속하면 hyde 테마가 적용된 표준 페이지가 출력될 것이다!<br />
+hyde 테마의 페이지가 출력된 것을 확인 했다면 이제 원하는대로 커스터이징을 진행 하면 된다.</p>
+
+<p>다음 포스트에는 _include와 _layout등의 폴더 구조에 대해 다뤄 볼 예정이다.</p>
+
+:ET

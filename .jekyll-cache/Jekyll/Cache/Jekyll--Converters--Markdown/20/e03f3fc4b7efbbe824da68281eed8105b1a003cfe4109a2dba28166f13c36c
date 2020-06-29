@@ -1,0 +1,569 @@
+I"�a<script src="/assets/scripts/toggle.js"></script>
+
+<script src="/assets/scripts/scrollTop.js"></script>
+
+<div class="page">
+
+	<h2 id="categories"><a href="#example" class="toggle">Categories</a></h2>
+	<span class="small_desc">Click here to see all categories</span>
+	<div class="clearfix"></div>
+		<div class="toggle-content" id="example">
+			
+			
+				
+					
+				
+		
+				
+					
+				
+		
+				
+					
+				
+		
+				
+					
+				
+		
+				
+					
+						<h3 class="category_name_link"><a href="http://localhost:4000/category/example/">example</a></h3>
+						
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/example/2012/02/07/example-content/">
+								  Example content
+								</a>
+								<span>07 Feb 2012</span>
+							</li>
+							</ul>
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/example/2012/02/06/whats-jekyll/">
+								  What's Jekyll?
+								</a>
+								<span>06 Feb 2012</span>
+							</li>
+							</ul>
+						  
+				
+				
+		
+				
+					
+						<h3 class="category_name_link"><a href="http://localhost:4000/category/github%20blog/">github blog</a></h3>
+						
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/github%20blog/2020/06/04/Githubblog3/">
+								  Github를 이용한 블로그 만들기 No.3
+								</a>
+								<span>04 Jun 2020</span>
+							</li>
+							</ul>
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/github%20blog/2020/06/03/Githubblog2/">
+								  Github를 이용한 블로그 만들기 No.2
+								</a>
+								<span>03 Jun 2020</span>
+							</li>
+							</ul>
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/github%20blog/2020/05/27/Githubblog1/">
+								  Github를 이용한 블로그 만들기 No.1
+								</a>
+								<span>27 May 2020</span>
+							</li>
+							</ul>
+						  
+				
+				
+		
+				
+					
+				
+		
+				
+					
+						<h3 class="category_name_link"><a href="http://localhost:4000/category/sample/">sample</a></h3>
+						
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/sample/2020/05/22/test-post/">
+								  sample content
+								</a>
+								<span>22 May 2020</span>
+							</li>
+							</ul>
+						  
+							<ul>
+							<li>
+								<a href="http://localhost:4000/sample/2013/12/28/introducing-hyde/">
+								  Introducing Hyde
+								</a>
+								<span>28 Dec 2013</span>
+							</li>
+							</ul>
+						  
+				
+				
+		
+				
+					
+				
+		
+				
+		
+				
+					
+				
+		
+	</div>
+<hr />
+
+	<div class="posts">
+	  
+	  <div class="post">
+		<h1 class="post-title">
+		  <a href="/github%20blog/2020/06/04/Githubblog3/">
+			Github를 이용한 블로그 만들기 No.3
+		  </a>
+		</h1>
+
+		<span class="post-date">04 Jun 2020</span>
+		<p>이번 포스트에서는 jekyll 서버를 구성하는 폴더에 구조와 역할에 대해서 알아보려고 한다. 다른 프로젝트와 마찬가지로 jekyll도 프로젝트를 구성하는 구조가 존재한다.  jekyll 공식 홈페이지 에서 제공하는 기본적인 디렉토리 구조는 <a href="https://jekyllrb-ko.github.io/docs/structure/">여기</a>에서 확인 할 수 있다.</p>
+
+<p><img src="https://bearshub.github.io/assets/img/github/structfolder.png" alt="사진" /></p>
+
+<h4 id="1-_configyml">1. _config.yml</h4>
+<p>_config.yml은 프로젝트의 설정 값들을 지정하는 파일로서, markdown의 종류 , url 주소, 사용하고 있는 plugin등 다양한 값들을 지정 할 수 있다.</p>
+
+<h4 id="2-_includes">2. _includes</h4>
+<p>html 또는 markdown 파일에서 공통적으로 사용하는 부분을 따로 분리 하여 _includes폴더에서 관리 할 수 있다. 작성자는 category와 sidebar, head 부분을 _includes 폴더에서 관리 하고 있다.<br />
+_includes 폴더에 저장 되어 있는 html 파일들은  **Liquid 에서 제공하는 문법을 사용하여 ** (<a href="https://goodgid.github.io/What-is-Liquid-Grammer/">Liquid 문법 참조</a>) 추가 할 수 있다. .  (html import와 유사한 형태)</p>
+
+<h4 id="3-_layouts">3. _layouts</h4>
+<p>_layouts 폴더에는 컨텐츠를 포함하는 화면 구조와 관련된 파일들이 포함되어 있다. layout의 file들은 화면의 성격이나 활용에 따라 달라질 것이고 includes 폴더에 있는 파일들로 구성될 수도 있다. 작성자는 post, page, category등과 같은 성격으로 분류하여 사용하고 있다.</p>
+
+<h4 id="4-_posts">4. _posts</h4>
+<p>_posts 폴더는 블로그 글을 저장하는 폴더이다. posts 폴더에 저장 할때는 파일 이름에 일정한 규칙이 있는데,  <strong>년도-월-일-제목.md</strong> 과 같은 형태를 따라야 한다. 파일명 형식이 맞지 않으면 블로그 리스트에서 글이 뜨지 않을 수 있다.</p>
+
+<h4 id="5-_site">5. _site</h4>
+<p>markdown 도 궁극적으로 html 파일로 컴파일되는데, jekyll 에서 컴파일 된 파일이 저장되는 기본 경로 폴더이다. github을 사용할 때는 .gitignore 파일에 추가하여 git에 업로드를 할때 _site 폴더는 업로드가 되지 않게 사용하기도 한다.</p>
+
+<h4 id="6-others">6. Others</h4>
+<p>이 밖에도 다양한 Floder와 file들이 존재하는 것 같다. 사실 굉장히 유연한 프레임워크 이기 떄문에 블로그를 운영하는 사람에 따라서도 구조가 달라질 수 있지만 어떤 테마를 받아서 적용하는지에 따라서도 조금씩 좌우 되는 것 같다.</p>
+
+
+	  </div>
+	  
+	  <div class="post">
+		<h1 class="post-title">
+		  <a href="/github%20blog/2020/06/03/Githubblog2/">
+			Github를 이용한 블로그 만들기 No.2
+		  </a>
+		</h1>
+
+		<span class="post-date">03 Jun 2020</span>
+		<p>지난 포스트는 Github의 Repository 생성부터 jekyll server를 설치하고 구동 시켜보는 것 까지 진행 했었다. 이번 포스트는 jekyll theme를 적용하는 것을 다루어 보려고 한다.  jekyll은  특색있는 테마들로 블로그를 꾸밀 수 있는데, 대부분 무료로 사용할 수 있는 테마들이 많이 있다.  필자는 jekyll의 많은 블로그 테마 중 <a href="https://github.com/poole/hyde">hyde</a> 테마를 적용하였고 이를 적용한 방법을 기록 하려고 한다.<br />
+<del>jekyll 엔 hyde가 딱이야 !</del></p>
+
+<ul>
+  <li>jekeyll theme 관련 사이트</li>
+  <li>
+    <p><a href="http://jekyllthemes.org/">jekyllthemes.org</a></p>
+  </li>
+  <li><a href="https://jekyllthemes.io/free">Free Jekyll Themes</a></li>
+</ul>
+
+<p>테마를 고르는데 몇 가지 팁이 있다면 가장 먼저 모바일 기기를 지원하는지 확인 하는 것이고 사이드바가 존재하는지 확인 하는 것이다.   사이드바가 없는 테마도 추가를 할 수 있지만 작업을 하다보면 정신건강에 해로울 수 있다.</p>
+
+<h3 id="1-hyde-테마-download">1. hyde 테마 Download</h3>
+<ul>
+  <li><a href="https://github.com/poole/hyde">hyde Github</a> 에서 Clone</li>
+  <li><a href="https://hyde.getpoole.com/">hyde Demo</a> 에서 Download를 클릭해서 zip 파일을 다운로드 
+위의 두 가지중 편한 것을 진행하여 앞서 만들었던 id.github.io 폴더에 저장한다.</li>
+</ul>
+
+<p><img src="https://bearshub.github.io/assets/img/github/github_blog_6.png" alt="사진" /></p>
+
+<h3 id="2-_configyml-파일-수정">2. _config.yml 파일 수정</h3>
+
+<ul>
+  <li>
+    <p>Markdown Dependancy 수정</p>
+
+    <ul>
+      <li>Github Page가 2019년 5월 부터 Markdown 형식을 <code class="highlighter-rouge">kramdown</code> 만 지원하는 것으로 정했다. 그래서 기존에 사용하던 <code class="highlighter-rouge">redcarpet</code> 방식에서 <code class="highlighter-rouge">kramdown</code> 으로 변경 해줘야 한다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>relative_permalinks 삭제</p>
+  </li>
+  <li>
+    <p>relative_permalinks : true 라고 되어 있는 항목을 삭제 한다.</p>
+  </li>
+  <li>Plug in 설치 및  추가
+    <ul>
+      <li>jekyll -paginate 와 jekyll-gist 를 설치 해준다.  (gem list 명령어로 설치 확인)
+        <pre><code class="language-jekyll">$ gem install jekyll-gist
+$ gem install jekyll-paginate
+</code></pre>
+      </li>
+      <li>이 부분을 _config.yml 마지막 부분에 추가 해 준다.
+```_config.yml
+plugins:
+        <ul>
+          <li>jekyll-paginate</li>
+          <li>jekyll-gist
+```</li>
+        </ul>
+      </li>
+      <li>Kramdown은 기존에 설치가 됐던 것으로 기억한다. 혹시라도 없으면 설치해 주시라..</li>
+    </ul>
+  </li>
+  <li>jekyll 테마마다 필요한 plugin이나 방법들이 다소 다를 수 있으니 주의 !</li>
+</ul>
+
+<h3 id="3-jekyll-구동">3. Jekyll 구동</h3>
+<pre><code class="language-jekyll">$ jekyll serve 
+</code></pre>
+
+<p>서버가 뜨는것을 확인 하고 <a href="http://localhost:4000">localhost:4000</a>으로 접속하면 hyde 테마가 적용된 표준 페이지가 출력될 것이다!<br />
+hyde 테마의 페이지가 출력된 것을 확인 했다면 이제 원하는대로 커스터이징을 진행 하면 된다.</p>
+
+<p>다음 포스트에는 _include와 _layout등의 폴더 구조에 대해 다뤄 볼 예정이다.</p>
+
+
+	  </div>
+	  
+	  <div class="post">
+		<h1 class="post-title">
+		  <a href="/github%20blog/2020/05/27/Githubblog1/">
+			Github를 이용한 블로그 만들기 No.1
+		  </a>
+		</h1>
+
+		<span class="post-date">27 May 2020</span>
+		<h3 id="1-github-repository-생성">1. Github Repository 생성</h3>
+
+<p>가장 먼저  <a href="https://github.com/">Github</a>에 회원가입을 하고 ID를 생성한다.<br />
+본인이 원하는 ID와 이름, 이메일정보 등을 사용하여 회원가입을 한 후 Repository를 생성한다.</p>
+
+<ul>
+  <li>New Repository 버튼을 클릭 하면 Repository를 생성하는 페이지로 이동한다.</li>
+</ul>
+
+<p><img src="https://bearshub.github.io/assets/img/github/github_blog_1.png" alt="사진" /></p>
+
+<ul>
+  <li>Repository name에 본인의 ID.github.io를 입력하여 생성한다.  이  주소가 곧  블로그의  메인 url이 된다. 작성자는  <strong><em>Initialize this repository with a README</em></strong> 를 체크 한 후에 진행했다.  생성 후에는 url (yourId.github.io)로 접속하여 확인 할 수 있다.</li>
+</ul>
+
+<p><img src="https://bearshub.github.io/assets/img/github/github_blog_2.png" alt="사진" /></p>
+
+<h3 id="2-repository-local-저장">2. Repository Local 저장</h3>
+
+<p>생성된 Github의 Repository를 local에 복사 한다. 후에 <a href="https://jekyllrb.com/">Jekyll</a> 을 이용해서 Local에 Server를 띄우고 작업할 수 있으며, Local에서 작업한 내용을 github에 commit / push 하여 변경이나 추가된 내용을 반영 할 수 있다.</p>
+
+<ul>
+  <li>Clone or download 버튼을 클릭할때 나오는 url을 복사한다.</li>
+</ul>
+
+<p><img src="https://bearshub.github.io/assets/img/github/github_blog_3.png" alt="사진" /></p>
+
+<ul>
+  <li>Repository로 사용하고 싶은 폴더에 들어가서 <em>shift + 우클릭 -&gt;  ‘여기에 Powershell 창 열기’</em> 를 선택하여 커맨드 창을 실행 할 수 있다.</li>
+</ul>
+
+<pre><code class="language-github">git clone targetURL
+</code></pre>
+<p>위의 명령어를 사용하여 폴더에 Repository가 생성된 것을 확인 할 수 있다.</p>
+
+<p><img src="https://bearshub.github.io/assets/img/github/github_blog_5.png" alt="사진" /></p>
+
+<h3 id="3-ruby-설치">3. Ruby 설치</h3>
+
+<p>갑자기 Ruby?? 라고 할 수 있지만 Local에서 jekyll을 설치하고 실행하기 위해서는 가장 먼저 Ruby 설치가 필요하다.  jekyll을 설치하면서 ‘gem’ 으로 시작하는 명령어를 사용할 텐데,  그 명령어가 바로 ruby 기반에서 동작 한다.  (ruby의 라이브러리다.)<br />
+<a href="https://rubyinstaller.org/downloads/">ruby Installer(for windows)</a> 를 통해서 다운로드 받을 수 있다.  <a href="https://itbellstone.tistory.com/43">(설치 참조 URL)</a></p>
+
+<h3 id="4-jekyll-설치">4. jekyll 설치</h3>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span>
+</code></pre></div></div>
+
+<p>일단 위의 명령어를 입력하는 것 외에 jekyll을 설치하기 위해서 따로 진행 할 것은 없다. jekyll은 정적 웹사이트를 생성해주는 툴이고 그렇기 떄문에 간단한 HTML과 CSS 등으로 사이트를 생성하고 운영할 수 있다. 그리고 빠르고 , 가볍다. <br />
+설치한 jekyll server를 테스트 하기 위해서는  아래와 같은 명령어로 확인 할 수 있다.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> <span class="n">jekyll</span> <span class="n">new</span> <span class="n">myblog</span>
+<span class="err">$</span> <span class="n">cd</span> <span class="n">new</span> <span class="n">myblog</span>
+<span class="err">$</span> <span class="n">jekeyll</span> <span class="n">serve</span>
+</code></pre></div></div>
+
+<p>정상적으로 설치 후  http://localhost:4000 으로 접속한다면 아래 그림과 같은 페이지를 확인 할 수 있다.</p>
+
+<p><img src="https://bearshub.github.io/assets/img/github/github_blog_4.png" alt="사진" /></p>
+
+<p>다음 포스트에서는 <a href="https://github.com/poole/hyde">hyde</a> 테마를 이용해서 블로그를 생성하는 것을 다루어 보도록 하겠다.</p>
+
+
+	  </div>
+	  
+	  <div class="post">
+		<h1 class="post-title">
+		  <a href="/sample/2020/05/22/test-post/">
+			sample content
+		  </a>
+		</h1>
+
+		<span class="post-date">22 May 2020</span>
+		<div class="message">
+  Hello world !!! 
+</div>
+
+<h2 id="markdown을-이용한-첫-블로그-글을-남긴다">MarkDown을 이용한 첫 블로그 글을 남긴다.</h2>
+<p>그렇다.</p>
+
+	  </div>
+	  
+	  <div class="post">
+		<h1 class="post-title">
+		  <a href="/sample/2013/12/28/introducing-hyde/">
+			Introducing Hyde
+		  </a>
+		</h1>
+
+		<span class="post-date">28 Dec 2013</span>
+		<p>Hyde is a brazen two-column <a href="http://jekyllrb.com">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. It’s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler.</p>
+
+<h3 id="built-on-poole">Built on Poole</h3>
+
+<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://twitter.com/mdo">@mdo</a>. Poole, and every theme built on it (like Hyde here) includes the following:</p>
+
+<ul>
+  <li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
+  <li>Mobile friendly design and development</li>
+  <li>Easily scalable text and component sizing with <code class="highlighter-rouge">rem</code> units in the CSS</li>
+  <li>Support for a wide gamut of HTML elements</li>
+  <li>Related posts (time-based, because Jekyll) below each post</li>
+  <li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
+</ul>
+
+<h3 id="hyde-features">Hyde features</h3>
+
+<p>In addition to the features of Poole, Hyde adds the following:</p>
+
+<ul>
+  <li>Sidebar includes support for textual modules and a dynamically generated navigation with active link support</li>
+  <li>Two orientations for content and sidebar, default (left sidebar) and <a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar), available via <code class="highlighter-rouge">&lt;body&gt;</code> classes</li>
+  <li><a href="https://github.com/poole/hyde#themes">Eight optional color schemes</a>, available via <code class="highlighter-rouge">&lt;body&gt;</code> classes</li>
+</ul>
+
+<p><a href="https://github.com/poole/hyde#readme">Head to the readme</a> to learn more.</p>
+
+<h3 id="browser-support">Browser support</h3>
+
+<p>Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
+
+<h3 id="download">Download</h3>
+
+<p>Hyde is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/hyde">GitHub repository</a> for downloads, bug reports, and features requests.</p>
+
+<p>Thanks!</p>
+
+	  </div>
+	  
+	  <div class="post">
+		<h1 class="post-title">
+		  <a href="/example/2012/02/07/example-content/">
+			Example content
+		  </a>
+		</h1>
+
+		<span class="post-date">07 Feb 2012</span>
+		<div class="message">
+  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+</div>
+
+<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+
+<blockquote>
+  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+</blockquote>
+
+<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+<h2 id="inline-html-elements">Inline HTML elements</h2>
+
+<p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+
+<ul>
+  <li><strong>To bold text</strong>, use <code class="highlighter-rouge">&lt;strong&gt;</code>.</li>
+  <li><em>To italicize text</em>, use <code class="highlighter-rouge">&lt;em&gt;</code>.</li>
+  <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="highlighter-rouge">title</code> attribute for the full phrase.</li>
+  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="highlighter-rouge">&lt;cite&gt;</code>.</li>
+  <li><del>Deleted</del> text should use <code class="highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="highlighter-rouge">&lt;ins&gt;</code>.</li>
+  <li>Superscript <sup>text</sup> uses <code class="highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="highlighter-rouge">&lt;sub&gt;</code>.</li>
+</ul>
+
+<p>Most of these elements are styled by browsers with few modifications on our part.</p>
+
+<h2 id="heading">Heading</h2>
+
+<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+<h3 id="code">Code</h3>
+
+<p>Cum sociis natoque penatibus et magnis dis <code class="highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
+
+<span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="c1">// Call the function</span>
+<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="c1">// &gt; 8</span></code></pre></figure>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+
+<h3 id="gists-via-github-pages">Gists via GitHub Pages</h3>
+
+<p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
+
+<noscript><pre>400: Invalid request</pre></noscript>
+<script src="https://gist.github.com/5555251.js?file=gist.md"> </script>
+
+<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.</p>
+
+<h3 id="lists">Lists</h3>
+
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+<ul>
+  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+  <li>Donec id elit non mi porta gravida at eget metus.</li>
+  <li>Nulla vitae elit libero, a pharetra augue.</li>
+</ul>
+
+<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+
+<ol>
+  <li>Vestibulum id ligula porta felis euismod semper.</li>
+  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+</ol>
+
+<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+
+<dl>
+  <dt>HyperText Markup Language (HTML)</dt>
+  <dd>The language used to describe and define the content of a Web page</dd>
+
+  <dt>Cascading Style Sheets (CSS)</dt>
+  <dd>Used to describe the appearance of Web content</dd>
+
+  <dt>JavaScript (JS)</dt>
+  <dd>The programming language used to build advanced Web sites and applications</dd>
+</dl>
+
+<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<h3 id="images">Images</h3>
+
+<p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.</p>
+
+<p><img src="http://placehold.it/800x400" alt="placeholder" title="Large example image" />
+<img src="http://placehold.it/400x200" alt="placeholder" title="Medium example image" />
+<img src="http://placehold.it/200x200" alt="placeholder" title="Small example image" /></p>
+
+<h3 id="tables">Tables</h3>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<hr />
+
+<p>Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an issue.</a></p>
+
+	  </div>
+	  
+	  <div class="post">
+		<h1 class="post-title">
+		  <a href="/example/2012/02/06/whats-jekyll/">
+			What's Jekyll?
+		  </a>
+		</h1>
+
+		<span class="post-date">06 Feb 2012</span>
+		<p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
+
+<blockquote>
+  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
+</blockquote>
+
+<p>It’s an immensely useful tool and one we encourage you to use here with Hyde.</p>
+
+<p>Find out more by <a href="https://github.com/mojombo/jekyll">visiting the project on GitHub</a>.</p>
+
+	  </div>
+	  
+	</div>
+	
+	<!--
+	<div class="pagination">
+	  
+		<span class="pagination-item older">Older</span>
+	  
+	  
+		<span class="pagination-item newer">Newer</span>
+	  
+	</div>
+	-->
+	<a id="back_to_top" onclick="scrollToTop(700)"><i class="icon-up-open"></i></a>
+</div>
+:ET
