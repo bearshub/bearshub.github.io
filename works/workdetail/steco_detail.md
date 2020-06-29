@@ -5,12 +5,6 @@ title: STECO
 
 <hr>
 <div class="work_outer">
-	<!--
-	<div class="title_outer">
-		<h1 class="page-title work_title">Sample Name</h1>
-	</div>
-	-->
-
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
 		  <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_1.png"></div>
@@ -22,7 +16,6 @@ title: STECO
 		  <div class="swiper-slide"><img src="/assets/img/steco/steco_slide_7.png"></div>
 		</div>
 		
-		<!-- Add Arrows -->
 		<div class="swiper-button-next"></div>
 		<div class="swiper-button-prev"></div>
 	</div>
@@ -45,10 +38,10 @@ title: STECO
 ### STECO OM(Open Market) MES System  
 해외사업을 대상으로 하는 물량을 진행하기 위해서 구축한 MES 시스템.   
 Bump - EDS 공정 간 생산되는 제품을 추적하여 관리.  
+
   
-  
-  
-  
+
+
 ##### UI Client
 - <i>HTML, Java Script, jqGrid and Highchart(Open Source)</i>
 
@@ -62,7 +55,7 @@ Bump - EDS 공정 간 생산되는 제품을 추적하여 관리.
 - <i>08.2017 ~ 08. 2019</i>
 
     
-    
+  
   
 	
 
