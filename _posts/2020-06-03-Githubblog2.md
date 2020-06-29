@@ -8,9 +8,10 @@ category: github blog
 ~~jekyll 엔 hyde가 딱이야 !~~ 
 
 
-* jekeyll theme 관련 사이트
+
+**jekeyll theme 관련 사이트**
+
 * [jekyllthemes.org](http://jekyllthemes.org/)
-  
 * [Free Jekyll Themes](https://jekyllthemes.io/free)
 
 테마를 고르는데 몇 가지 팁이 있다면 가장 먼저 모바일 기기를 지원하는지 확인 하는 것이고 사이드바가 존재하는지 확인 하는 것이다.   사이드바가 없는 테마도 추가를 할 수 있지만 작업을 하다보면 정신건강에 해로울 수 있다. 
@@ -18,6 +19,7 @@ category: github blog
 
 
 ### 1. hyde 테마 Download
+
 * [hyde Github](https://github.com/poole/hyde) 에서 Clone
 * [hyde Demo](https://hyde.getpoole.com/) 에서 Download를 클릭해서 zip 파일을 다운로드 
 위의 두 가지중 편한 것을 진행하여 앞서 만들었던 id.github.io 폴더에 저장한다. 
