@@ -1,17 +1,17 @@
 I"�<p>지난 포스트는 Github의 Repository 생성부터 jekyll server를 설치하고 구동 시켜보는 것 까지 진행 했었다. 이번 포스트는 jekyll theme를 적용하는 것을 다루어 보려고 한다.  jekyll은  특색있는 테마들로 블로그를 꾸밀 수 있는데, 대부분 무료로 사용할 수 있는 테마들이 많이 있다.  필자는 jekyll의 많은 블로그 테마 중 <a href="https://github.com/poole/hyde">hyde</a> 테마를 적용하였고 이를 적용한 방법을 기록 하려고 한다.<br />
 <del>jekyll 엔 hyde가 딱이야 !</del></p>
 
+<p><strong>jekeyll theme 관련 사이트</strong></p>
+
 <ul>
-  <li>jekeyll theme 관련 사이트</li>
-  <li>
-    <p><a href="http://jekyllthemes.org/">jekyllthemes.org</a></p>
-  </li>
+  <li><a href="http://jekyllthemes.org/">jekyllthemes.org</a></li>
   <li><a href="https://jekyllthemes.io/free">Free Jekyll Themes</a></li>
 </ul>
 
 <p>테마를 고르는데 몇 가지 팁이 있다면 가장 먼저 모바일 기기를 지원하는지 확인 하는 것이고 사이드바가 존재하는지 확인 하는 것이다.   사이드바가 없는 테마도 추가를 할 수 있지만 작업을 하다보면 정신건강에 해로울 수 있다.</p>
 
 <h3 id="1-hyde-테마-download">1. hyde 테마 Download</h3>
+
 <ul>
   <li><a href="https://github.com/poole/hyde">hyde Github</a> 에서 Clone</li>
   <li><a href="https://hyde.getpoole.com/">hyde Demo</a> 에서 Download를 클릭해서 zip 파일을 다운로드 

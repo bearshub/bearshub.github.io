@@ -1,0 +1,41 @@
+I"E<div class="clearfix"></div>
+<hr style="width:100%" />
+
+<p><img class="me" src="/public/meicon.jpg" /></p>
+
+<h1 id="hello-world">Hello, world!</h1>
+
+<h3 id="daewoong-kim">Daewoong Kim</h3>
+
+<p>이제 개발 5년차에 접어든 웹 개발자.<br />
+더 늦기 전에 내가 보고 행한 것들을 기록하기 위해 블로그를 개설 하였다.<br />
+현재 MES (Manufacturing Execution System) 분야에 몸 담고 있다.</p>
+
+<hr />
+
+<h3 id="stack">Stack</h3>
+
+<h4 id="languages"><u>Languages</u></h4>
+
+<ul>
+  <li>java</li>
+  <li>javascript</li>
+  <li>HTML</li>
+</ul>
+
+<h4 id="frameworks"><u>Frameworks</u></h4>
+
+<ul>
+  <li>Spring Framework</li>
+  <li>Jekyll (static site framework , based on this blog)</li>
+</ul>
+
+<h4 id="other"><u>Other</u></h4>
+
+<ul>
+  <li>Git</li>
+  <li>Jenkins</li>
+  <li>Linux</li>
+  <li>Tomcat</li>
+</ul>
+:ET

@@ -6,7 +6,7 @@ title: About
 <hr style="width:100%">
 <img class="me" src="/public/meicon.jpg"/>
 
-# Hello, wold!
+# Hello, world!
 
 
 
