@@ -13,7 +13,7 @@ title: About
 ### Daewoong Kim
 
 이제 개발 5년차에 접어든 웹 개발자.  
-더 늦기 전에 내가 보고 행한 것들을 기록하기 위해 블로그를 개설 하였다.  
+더 늦기 전에 내가 보고 행한 것들을 기록하기 위해 블로그를 개설하였다.  
 현재 MES (Manufacturing Execution System) 분야에 몸 담고 있다.     
 
 ----------
