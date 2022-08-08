@@ -47,11 +47,12 @@ category: github blog
 	$ gem install jekyll-paginate
 	```
   + 이 부분을 _config.yml 마지막 부분에 추가 해 준다. 
-	```
-	plugins:
-	- jekyll-paginate
+	
+	```jekyll
+	plugins
+	- jekyll-paginateek
 	- jekyll-gist
-	```
+  ```
   + Kramdown은 기존에 설치가 됐던 것으로 기억한다. 혹시라도 없으면 설치해 주시라.. 
   
 + jekyll 테마마다 필요한 plugin이나 방법들이 다소 다를 수 있으니 주의 ! 
