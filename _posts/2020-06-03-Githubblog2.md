@@ -47,7 +47,7 @@ category: github blog
 	$ gem install jekyll-paginate
 	```
   + 이 부분을 _config.yml 마지막 부분에 추가 해 준다. 
-	```_config.yml
+	```
 	plugins:
 	- jekyll-paginate
 	- jekyll-gist
@@ -64,6 +64,7 @@ $ jekyll serve
 ```
 
 서버가 뜨는것을 확인 하고 [localhost:4000](http://localhost:4000)으로 접속하면 hyde 테마가 적용된 표준 페이지가 출력될 것이다!  
+
 hyde 테마의 페이지가 출력된 것을 확인 했다면 이제 원하는대로 커스터이징을 진행 하면 된다.
 
 
