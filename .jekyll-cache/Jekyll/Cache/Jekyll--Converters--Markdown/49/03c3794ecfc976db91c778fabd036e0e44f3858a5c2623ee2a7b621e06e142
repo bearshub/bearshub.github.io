@@ -1,4 +1,4 @@
-I"�<p>지난 포스트는 Github의 Repository 생성부터 jekyll server를 설치하고 구동 시켜보는 것 까지 진행 했었다. 이번 포스트는 jekyll theme를 적용하는 것을 다루어 보려고 한다.  jekyll은  특색있는 테마들로 블로그를 꾸밀 수 있는데, 대부분 무료로 사용할 수 있는 테마들이 많이 있다.  필자는 jekyll의 많은 블로그 테마 중 <a href="https://github.com/poole/hyde">hyde</a> 테마를 적용하였고 이를 적용한 방법을 기록 하려고 한다.<br />
+I"�<p>지난 포스트는 Github의 Repository 생성부터 jekyll server를 설치하고 구동 시켜보는 것 까지 진행 했었다. 이번 포스트는 jekyll theme를 적용하는 것을 다루어 보려고 한다.  jekyll은  특색있는 테마들로 블로그를 꾸밀 수 있는데, 대부분 무료로 사용할 수 있는 테마들이 많이 있다.  필자는 jekyll의 많은 블로그 테마 중 <a href="https://github.com/poole/hyde">hyde</a> 테마를 적용하였고 이를 적용한 방법을 기록 하려고 한다.<br />
 <del>jekyll 엔 hyde가 딱이야 !</del></p>
 
 <p><strong>jekeyll theme 관련 사이트</strong></p>
@@ -27,7 +27,7 @@
     <p>Markdown Dependancy 수정</p>
 
     <ul>
-      <li>Github Page가 2019년 5월 부터 Markdown 형식을 <code class="highlighter-rouge">kramdown</code> 만 지원하는 것으로 정했다. 그래서 기존에 사용하던 <code class="highlighter-rouge">redcarpet</code> 방식에서 <code class="highlighter-rouge">kramdown</code> 으로 변경 해줘야 한다.</li>
+      <li>Github Page가 2019년 5월 부터 Markdown 형식을 <code class="language-plaintext highlighter-rouge">kramdown</code> 만 지원하는 것으로 정했다. 그래서 기존에 사용하던 <code class="language-plaintext highlighter-rouge">redcarpet</code> 방식에서 <code class="language-plaintext highlighter-rouge">kramdown</code> 으로 변경 해줘야 한다.</li>
     </ul>
   </li>
   <li>
